@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".berita"
+    android:background="#ADD8E6">
+
+    //Layout activity_berita digunakan untuk menampilkan isi dari suatu berita
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        //LinearLayout untuk button kembali
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            //Button kembali
+            <Button
+                android:id="@+id/kembali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kembali"
+                android:textColor="#FFFFFF"
+                android:background="#3CB371"/>
+        </LinearLayout>
+
+        //LinearLayout untuk gambar berita
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal">
+
+            //Gambar berita
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/berita" />
+        </LinearLayout>
+
+        //Scrollview untuk teks berita
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            //LinearLayout untuk Berita
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                //Text berita
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Contoh Berita.... Tahun ini pemerintah akan mengganti bahan bakar premium dengan pertalite per bulan maret 2015. Penggantian ini telah disetujui oleh menteri SDM dan pihak pertamina. Mereka beralasan bahwa penggunaan pertalite jauh lebih efisien dan ramah lingkungan jika dibandingkan dengan penggunaan premium. Hal ini dikarenakan pertalite mengandung kadar Ron yang lebih baik. Tak hanya itu, pertalite juga memiliki kadar oktan yang berkisar antara 90 hingga 91, atau berada diantara produk premium yang memiliki kadar oktan 88 dan pertamax di level 92. Hal ini akan menghasilkan pembakaran yang sempurna pada kinerja mesin mobil, sehingga mesin akan menjadi optimal dan awet. Sayangnya, pemerintah hingga kini masih bingung dalam menentukan margin keuntungan dalam penjualan pertalite ini. Diperkirakan margin keuntungannya akan mendekati margin keuntungan pada pertamax, yaitu di kisaran Rp 375 per liter. Rencananya pemerintah akan mengganti semua premium dengan cara bertahap, saat ini mereka telah melakukan uji coba di wilayah Jawa,  Madura, dan Bali. Direncanakan tahun depan pertalite telah digunakan oleh konsumen di seluruh wilayah Indonesia. Contoh Berita.... Tahun ini pemerintah akan mengganti bahan bakar premium dengan pertalite per bulan maret 2015. Penggantian ini telah disetujui oleh menteri SDM dan pihak pertamina. Mereka beralasan bahwa penggunaan pertalite jauh lebih efisien dan ramah lingkungan jika dibandingkan dengan penggunaan premium. Hal ini dikarenakan pertalite mengandung kadar Ron yang lebih baik. Tak hanya itu, pertalite juga memiliki kadar oktan yang berkisar antara 90 hingga 91, atau berada diantara produk premium yang memiliki kadar oktan 88 dan pertamax di level 92. Hal ini akan menghasilkan pembakaran yang sempurna pada kinerja mesin mobil, sehingga mesin akan menjadi optimal dan awet. Sayangnya, pemerintah hingga kini masih bingung dalam menentukan margin keuntungan dalam penjualan pertalite ini. Diperkirakan margin keuntungannya akan mendekati margin keuntungan pada pertamax, yaitu di kisaran Rp 375 per liter. Rencananya pemerintah akan mengganti semua premium dengan cara bertahap, saat ini mereka telah melakukan uji coba di wilayah Jawa,  Madura, dan Bali. Direncanakan tahun depan pertalite telah digunakan oleh konsumen di seluruh wilayah Indonesia. Contoh Berita.... Tahun ini pemerintah akan mengganti bahan bakar premium dengan pertalite per bulan maret 2015. Penggantian ini telah disetujui oleh menteri SDM dan pihak pertamina. Mereka beralasan bahwa penggunaan pertalite jauh lebih efisien dan ramah lingkungan jika dibandingkan dengan penggunaan premium. Hal ini dikarenakan pertalite mengandung kadar Ron yang lebih baik. Tak hanya itu, pertalite juga memiliki kadar oktan yang berkisar antara 90 hingga 91, atau berada diantara produk premium yang memiliki kadar oktan 88 dan pertamax di level 92. Hal ini akan menghasilkan pembakaran yang sempurna pada kinerja mesin mobil, sehingga mesin akan menjadi optimal dan awet. Sayangnya, pemerintah hingga kini masih bingung dalam menentukan margin keuntungan dalam penjualan pertalite ini. Diperkirakan margin keuntungannya akan mendekati margin keuntungan pada pertamax, yaitu di kisaran Rp 375 per liter. Rencananya pemerintah akan mengganti semua premium dengan cara bertahap, saat ini mereka telah melakukan uji coba di wilayah Jawa,  Madura, dan Bali. Direncanakan tahun depan pertalite telah digunakan oleh konsumen di seluruh wilayah Indonesia."
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

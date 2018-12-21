@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    //Layout activity_galeri untuk menampilkan gambar / foto yang sudah diambil
+    //setelah menekan tombol button Tambahkan Gambar
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        //Button untuk Menambahkan gambar melalui kamera
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Tambahkan Gambar"
+            android:textColor="#FFFFFF"
+            android:background="#353364"/>
+
+        //Button untuk Kembali
+        <Button
+            android:id="@+id/kembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_gambar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Kembali"
+            android:textColor="#FFFFFF"
+            android:background="#B22222"/>
+    </LinearLayout>
+
+    //LinearLayout untuk gambar yang ditambahkan
+    <LinearLayout
+        android:id="@id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="57dp"
+        android:orientation="vertical"
+        android:layout_below="@id/lay1">
+
+        //ImageView untuk menampilkan gambar yang telah ditambahkan
+        <ImageView
+            android:id="@+id/iv_gambar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"/>
+    </LinearLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_gambar2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" -->
+    <!--android:layout_below="@+id/iv_gambar"/>-->
+</RelativeLayout>

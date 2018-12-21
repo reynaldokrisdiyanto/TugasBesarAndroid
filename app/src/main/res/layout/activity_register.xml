@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".Register"
+    android:background="#ADD8E6">
+
+    //Layout activity_register digunakan untuk menampilkan form registrasi.
+    //Form registrasi ini digunakan untuk melakukan pendaftaran bagi seseorang yang ingin menjadi member CNN.
+    //yang nantinya dapat melakukan login aplikasi CNN.
+
+    //TextView untuk menampilkan title "Registrasi"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="Registrasi"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#2F4F4F"/>
+
+    //TextView untuk menampilkan text "Username"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="Username :"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"/>
+
+    //EditText untuk mengisi / input Username
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:hint="Input Username"
+        android:inputType="textEmailAddress" />
+
+    //TextView untuk menampilkan text "Email"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="Email :"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"/>
+
+    //EditText untuk mengisi / input Email
+    <EditText
+        android:id="@+id/edit_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:hint="Input Email"
+        android:inputType="textEmailAddress" />
+
+    //TextView untuk menampilkan text "Password"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="Password :"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"/>
+
+    //EditText untuk mengisi / input Password
+    <EditText
+        android:id="@+id/edit_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:hint="Input Password"
+        android:inputType="textPassword" />
+
+    //TextView untuk menampilkan text "Confirm Password"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="Confirm Password :"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"/>
+
+    //EditText untuk mengisi / input ConfirmPassword
+    <EditText
+        android:id="@+id/edit_confpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    //Button untuk Submit
+    <Button
+        android:id="@+id/buttonRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="6dp"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:background="#FFA500"/>
+</LinearLayout>

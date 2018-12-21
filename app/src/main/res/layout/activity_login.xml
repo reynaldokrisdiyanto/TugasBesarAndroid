@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".Login"
+    android:background="#ADD8E6">
+
+    //Layout activity_login digunakan untuk menampilkan form login yang mana
+    //agar member dapat mengakses / menggunakan aplikasi CNN
+
+    //TextView untuk menampilkan title "Form Login"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Form Login"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#2F4F4F"/>
+
+    //TextView untuk menampilkan text "Username"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Username :"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"/>
+
+    //EditTex untuk mengisi / input Username
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Input Username"
+        android:inputType="text" />
+
+    //TextView untuk menampilkan text "Password"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Password :"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"/>
+
+    //EditText untuk mengisi / input Password
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Input Password"
+        android:inputType="textPassword" />
+
+    //Button untuk login
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="12dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:background="#FFA500"/>
+
+    //Button untuk Registrasi
+    <Button
+        android:id="@+id/buttonReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="12dp"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:background="#FFA500"/>
+</LinearLayout>

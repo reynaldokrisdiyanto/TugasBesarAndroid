@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ihzar.tutorialloginsqlite">
+
+    //permission untuk akses internet
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    //permission untuk kamera
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.CAMERA" />
+
+    //permission untuk maps
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- ini adalah urutan form sesuai dengan yang kita inginkan -->
+        <!-- ini adalah form paling awal dari kelas yang kita buat -->
+        <!-- selalu ingat untuk mengubah android namenya sesuai dengan class yang diinginkan -->
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Register" />
+        <activity android:name=".home" />
+        <activity android:name=".berita" />
+        <activity android:name=".tentang" />
+        <activity android:name=".Galeri"></activity>
+    </application>
+
+</manifest>
